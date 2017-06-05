@@ -9,4 +9,4 @@ Random number generation application used by TRPG asked by a friend.
 ## Screen Shots
 |SS1|SS2|SS3|
 |---|---|---|
-|![SS1](https://github.com/TomoyaFujita2016/ScreenShots/blob/master/TRPG_Judge_Number/Screenshot_1496681690.png)|![SS2](https://github.com/TomoyaFujita2016/ScreenShots/blob/master/TRPG_Judge_Number/Screenshot_1496683061.png)|![SS3](https://github.com/TomoyaFujita2016/ScreenShots/blob/master/TRPG_Judge_Number/Screenshot_1496683037.png)|
+|![SS1](https://github.com/TomoyaFujita2016/ScreenShots/blob/master/TRPG_Judge_Number/Screenshot_1496681690.png)|![SS2](https://github.com/TomoyaFujita2016/ScreenShots/blob/master/TRPG_Judge_Number/Screenshot_1496681614.png)|![SS3](https://github.com/TomoyaFujita2016/ScreenShots/blob/master/TRPG_Judge_Number/Screenshot_1496683037.png)|
