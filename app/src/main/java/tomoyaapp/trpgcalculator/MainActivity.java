@@ -103,12 +103,12 @@ public class MainActivity extends Activity implements View.OnClickListener {
                 resetEditText("Only 0 ~ 99 !");
             } else {
                 inputNumber = rand.nextInt(100);
-
+/*
                 inputNumber = TEST[idx];
                 idx++;
                 if (idx > TEST.length -1)
                     idx = 0;
-
+*/
                 mainTextView.setText(inputNumber + "");
 
                 message[0] = "Success!!!";
