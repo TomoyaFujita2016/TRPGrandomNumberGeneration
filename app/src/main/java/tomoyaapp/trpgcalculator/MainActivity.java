@@ -31,7 +31,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
     private boolean byEx = false;
     private Random rand;
     private String[] message;
-    private int[] TEST = {0, 1, 25, 50, 75, 98, 99};
+    private int[] TEST = {1, 25, 50, 75, 98, 99};
     private int idx;
 
     private static final int Fumble = 95;
@@ -102,13 +102,13 @@ public class MainActivity extends Activity implements View.OnClickListener {
             if (!(0 <= targetNumber && targetNumber < 100)) {
                 resetEditText("Only 0 ~ 99 !");
             } else {
-                inputNumber = rand.nextInt(100);
-/*
+                inputNumber = rand.nextInt(100)+1;
+
                 inputNumber = TEST[idx];
                 idx++;
                 if (idx > TEST.length -1)
                     idx = 0;
-*/
+
                 mainTextView.setText(inputNumber + "");
 
                 message[0] = "Success!!!";
@@ -126,12 +126,12 @@ public class MainActivity extends Activity implements View.OnClickListener {
                     //popupTextView[2].setText("Fumble!!!");
                     //feedIO(popupTextView[2], 1000);
                 }
-                if (targetNumber <= inputNumber) {
+                if (inputNumber <= targetNumber) {
                     Log.d("SUCCESS", inputNumber + "");
                     popupTextView[0].setText(message[0]);
                     feedIO(popupTextView[0], 1000);
                 }
-                if (inputNumber < targetNumber) {
+                if (targetNumber < inputNumber) {
                     Log.d("FAILURE", inputNumber + "");
                     popupTextView[1].setText(message[1]);
                     feedIO(popupTextView[1], 1000);
@@ -147,8 +147,8 @@ public class MainActivity extends Activity implements View.OnClickListener {
 
 
     private void resetEditText(String errorMessage) {
-        editText.setText(0+"");
-        targetNumber = 0;
+        editText.setText(1+"");
+        targetNumber = 1;
         Toast.makeText(this, errorMessage, Toast.LENGTH_SHORT).show();
     }
 
