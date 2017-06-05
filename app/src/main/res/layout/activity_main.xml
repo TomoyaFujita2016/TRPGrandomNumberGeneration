@@ -26,21 +26,35 @@
             android:textColor="#81F781"
             android:textSize="37dp" />
 
-        <ScrollView
-            android:layout_margin="20dp"
-            android:background="@drawable/dark_hardtissue"
+        <TextView
+            android:id="@+id/mainTv"
+            android:gravity="center"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="wrap_content"
+            android:textSize="100dp"
+            android:text="20"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal"/>
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
+        <EditText
+            android:id="@+id/editText"
+            android:text="0"
+            android:textSize="40dp"
+            android:layout_weight="0"
+            android:layout_width="100dp"
+            android:gravity="center"
+            android:layout_height="60dp"
+            android:layout_gravity="center_horizontal"/>
 
-            </LinearLayout>
-        </ScrollView>
 
         <ImageButton
-            android:layout_width="wrap_content"
+            android:id="@+id/btn"
+            android:src="@drawable/flower_icon"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_width="100dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:layout_weight="0"
             android:layout_height="wrap_content" />
 
     </LinearLayout>
