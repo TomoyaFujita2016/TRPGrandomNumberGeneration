@@ -7,6 +7,7 @@
     android:background="@drawable/dark_planingwood"
     tools:context="tomoyaapp.trpgcalculator.MainActivity">
 
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -22,41 +23,78 @@
             android:shadowDx="2.5"
             android:shadowDy="2.5"
             android:shadowRadius="4.0"
-            android:text="TRPG乱数メーカー"
+            android:text="TRPG JUDGE NUMBER"
             android:textColor="#81F781"
-            android:textSize="37dp" />
+            android:textSize="25dp" />
 
         <TextView
             android:id="@+id/mainTv"
-            android:gravity="center"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="100dp"
-            android:text="20"
+            android:layout_gravity="center_horizontal"
             android:layout_weight="1"
-            android:layout_gravity="center_horizontal"/>
+            android:gravity="center"
+            android:text="YOUR\nNUM"
+            android:textSize="100dp" />
 
         <EditText
             android:id="@+id/editText"
-            android:text="0"
-            android:textSize="40dp"
-            android:layout_weight="0"
             android:layout_width="100dp"
-            android:gravity="center"
             android:layout_height="60dp"
-            android:layout_gravity="center_horizontal"/>
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0"
+            android:gravity="center"
+            android:text="0"
+            android:textSize="40dp" />
 
 
         <ImageButton
             android:id="@+id/btn"
-            android:src="@drawable/flower_icon"
-            android:layout_gravity="bottom|center_horizontal"
             android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_weight="0"
             android:adjustViewBounds="true"
             android:scaleType="fitCenter"
-            android:layout_weight="0"
-            android:layout_height="wrap_content" />
+            android:src="@drawable/flower_icon" />
 
     </LinearLayout>
+
+    <TextView
+        android:id="@+id/popUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="100dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/f00593_1"
+        android:gravity="center"
+        android:text="Success!!!"
+        android:textSize="60dp" />
+    <TextView
+        android:id="@+id/popUp2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="100dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/f00593_2"
+        android:gravity="center"
+        android:text="Failure..."
+        android:textSize="60dp" />
+    <TextView
+        android:id="@+id/popUp3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="100dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/f00593_3"
+        android:gravity="center"
+        android:text="Fumble!!!"
+        android:textSize="60dp" />
 
 </RelativeLayout>
